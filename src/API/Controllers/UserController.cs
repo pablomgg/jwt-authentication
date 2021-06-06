@@ -1,4 +1,5 @@
 ﻿using API.Configurations;
+using API.Dtos;
 using Infrastructure.Application.Core;
 using Infrastructure.Identity.Core;
 using Infrastructure.Identity.Model;
@@ -6,10 +7,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using API.Dtos;
 
 namespace API.Controllers
 {
@@ -24,6 +25,18 @@ namespace API.Controllers
 
         public UserController(IHttpContextAccessor httpContextAccessor, IAuthentication authentication) : base(httpContextAccessor, authentication)
         {
+        }
+
+        /// <summary>
+        /// Obtem todos os usuários.
+        /// </summary> 
+        /// <returns>Retorna todos os usuários</returns>
+        [HttpGet]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(IList<UserModel>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> ObterTodosAsync()
+        { 
+            return Ok(await Task.FromResult(_users));
         }
 
         /// <summary>

@@ -5,6 +5,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Text;
 using Microsoft.AspNetCore.Http;
 
@@ -22,6 +24,9 @@ namespace Infrastructure.Application.Extensions
                     Version = provider.Version,
                     Description = provider.Description
                 });
+
+                var filePath = Path.Combine(System.AppContext.BaseDirectory, "API.xml");
+                opt.IncludeXmlComments(filePath);
 
                 opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {

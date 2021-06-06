@@ -1,9 +1,0 @@
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\bin\Debug\netcoreapp3.1\Infrastructure.Application.deps.json
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\bin\Debug\netcoreapp3.1\Infrastructure.Application.dll
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\bin\Debug\netcoreapp3.1\Infrastructure.Application.pdb
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.csproj.AssemblyReference.cache
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.AssemblyInfoInputs.cache
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.AssemblyInfo.cs
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.csproj.CoreCompileInputs.cache
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.dll
-C:\git\jwt-authentication\src\Infrastructure\Infrastructure.Application\obj\Debug\netcoreapp3.1\Infrastructure.Application.pdb
